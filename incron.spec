@@ -12,7 +12,6 @@ Patch0:  incron-Makefile-missing-man.patch
 License: GPL
 Group: System/Servers
 Url: http://incron.aiken.cz/
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: gcc-c++
 
 %description
