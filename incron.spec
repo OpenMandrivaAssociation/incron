@@ -1,5 +1,5 @@
 %define name incron
-%define version 0.5.8
+%define version 0.5.9
 %define release %mkrel 1
 
 Summary: An inotify based cron daemon
@@ -9,6 +9,7 @@ Release: %{release}
 Source0: %{name}-%{version}.tar.bz2
 Source1: incron.initscript
 Patch0:  incron-Makefile-missing-man.patch
+Patch1:  incron-0.5.9-includes.patch
 License: GPL
 Group: System/Servers
 Url: http://incron.aiken.cz/
@@ -24,7 +25,7 @@ manipulator "incrontab" (like "crontab").
 %prep
 %setup -q
 %patch0 -p0 -b .missing-man
-
+%patch1 -p1 -b .includes
 %build
 %make OPTIMIZE="%optflags" PREFIX=%_prefix
 
