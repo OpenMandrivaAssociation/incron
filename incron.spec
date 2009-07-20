@@ -8,7 +8,7 @@ Version: %{version}
 Release: %{release}
 Source0: %{name}-%{version}.tar.bz2
 Source1: incron.initscript
-Patch0:  incron-Makefile-missing-man.patch
+Patch0:  incron-0.5.9-constness.patch
 Patch1:  incron-0.5.9-includes.patch
 License: GPL
 Group: System/Servers
@@ -24,7 +24,7 @@ manipulator "incrontab" (like "crontab").
 
 %prep
 %setup -q
-%patch0 -p0 -b .missing-man
+%patch0 -p1 -b .const
 %patch1 -p1 -b .includes
 %build
 %make OPTIMIZE="%optflags" PREFIX=%_prefix
