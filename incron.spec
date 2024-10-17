@@ -12,7 +12,7 @@ Patch0:  incron-0.5.9-constness.patch
 Patch1:  incron-0.5.9-includes.patch
 License: GPL
 Group: System/Servers
-Url: http://incron.aiken.cz/
+Url: https://incron.aiken.cz/
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: gcc-c++
 
