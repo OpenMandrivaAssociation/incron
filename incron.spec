@@ -14,6 +14,7 @@ License: GPL
 Group: System/Servers
 Url: https://incron.aiken.cz/
 BuildRoot: %{_tmppath}/%{name}-buildroot
+BuildRequires:	make
 BuildRequires: gcc-c++
 
 %description
