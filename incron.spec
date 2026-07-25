@@ -1,6 +1,6 @@
 %define name incron
 %define version 0.5.9
-%define release %mkrel 2
+%define release 3
 
 Summary: An inotify based cron daemon
 Name: %{name}
